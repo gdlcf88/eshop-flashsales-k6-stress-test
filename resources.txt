@@ -4,3 +4,5 @@ Server (K8S Nodes):
 
 Client:
 1 * S6.2XLARGE32 | 8 cores, 16GB RAM, 100Mbps | Qcloud Hongkong(Zone 3)
+
+Flash sales stock(inventory): 50
