@@ -1,0 +1,107 @@
+[root@VM-0-2-centos ~]# k6 run ./test.js
+
+          /\      |??| /??/   /??/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ??\  
+   /          \   |  |\  \ |  (?)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: ./test.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 300 max VUs, 1m30s max duration (incl. graceful stop):
+           * contacts: 1 iterations for each of 300 VUs (maxDuration: 1m0s, gracefulStop: 30s)
+
+
+running (0m07.1s), 000/300 VUs, 300 complete and 0 interrupted iterations
+contacts ? [======================================] 300 VUs  0m07.1s/1m0s  300/300 iters, 1 per VU
+
+     data_received..................: 69 kB 9.8 kB/s
+     data_sent......................: 83 kB 12 kB/s
+     http_req_blocked...............: avg=39.49ms  min=32.47ms med=39.44ms  max=45.64ms p(90)=44.32ms  p(95)=44.8ms  
+     http_req_connecting............: avg=8.92ms   min=1.76ms  med=9.84ms   max=12.24ms p(90)=10.64ms  p(95)=10.81ms 
+     http_req_duration..............: avg=4.71s    min=2.66s   med=3.46s    max=7.01s   p(90)=6.92s    p(95)=6.95s   
+       { expected_response:true }...: avg=4.71s    min=2.66s   med=3.46s    max=7.01s   p(90)=6.92s    p(95)=6.95s   
+     http_req_failed................: 0.00% ? 0         ? 300  
+     http_req_receiving.............: avg=556.92ms min=16.85?s med=37.5?s   max=4.31s   p(90)=3.22s    p(95)=3.9s    
+     http_req_sending...............: avg=379.84?s min=15.34?s med=369.05?s max=1.45ms  p(90)=733.96?s p(95)=829.37?s
+     http_req_tls_handshaking.......: avg=0s       min=0s      med=0s       max=0s      p(90)=0s       p(95)=0s      
+     http_req_waiting...............: avg=4.15s    min=1.61s   med=3.33s    max=7.01s   p(90)=6.92s    p(95)=6.95s   
+     http_reqs......................: 300   42.489624/s
+     iteration_duration.............: avg=4.75s    min=2.7s    med=3.51s    max=7.05s   p(90)=6.96s    p(95)=6.99s   
+     iterations.....................: 300   42.489624/s
+     vus............................: 41    min=41      max=300
+     vus_max........................: 300   min=300     max=300
+
+[root@VM-0-2-centos ~]# k6 run ./test.js
+
+          /\      |??| /??/   /??/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ??\  
+   /          \   |  |\  \ |  (?)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: ./test.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 300 max VUs, 1m30s max duration (incl. graceful stop):
+           * contacts: 1 iterations for each of 300 VUs (maxDuration: 1m0s, gracefulStop: 30s)
+
+
+running (0m08.1s), 000/300 VUs, 300 complete and 0 interrupted iterations
+contacts ? [======================================] 300 VUs  0m08.1s/1m0s  300/300 iters, 1 per VU
+
+     data_received..................: 69 kB 8.5 kB/s
+     data_sent......................: 83 kB 10 kB/s
+     http_req_blocked...............: avg=4.66ms   min=1.44ms  med=3.3ms    max=12.47ms p(90)=9.58ms p(95)=10.16ms
+     http_req_connecting............: avg=4.43ms   min=1.4ms   med=3.21ms   max=12.43ms p(90)=8.38ms p(95)=9.59ms 
+     http_req_duration..............: avg=4.77s    min=3.22s   med=4.31s    max=8.11s   p(90)=7.61s  p(95)=7.82s  
+       { expected_response:true }...: avg=4.77s    min=3.22s   med=4.31s    max=8.11s   p(90)=7.61s  p(95)=7.82s  
+     http_req_failed................: 0.00% ? 0         ? 300  
+     http_req_receiving.............: avg=753.01ms min=21.44?s med=34.8?s   max=4.99s   p(90)=4.6s   p(95)=4.72s  
+     http_req_sending...............: avg=941.85?s min=21.91?s med=195.72?s max=2.99ms  p(90)=2.82ms p(95)=2.91ms 
+     http_req_tls_handshaking.......: avg=0s       min=0s      med=0s       max=0s      p(90)=0s     p(95)=0s     
+     http_req_waiting...............: avg=4.01s    min=1.72s   med=4.12s    max=4.91s   p(90)=4.71s  p(95)=4.81s  
+     http_reqs......................: 300   36.935161/s
+     iteration_duration.............: avg=4.77s    min=3.22s   med=4.31s    max=8.11s   p(90)=7.61s  p(95)=7.82s  
+     iterations.....................: 300   36.935161/s
+     vus............................: 10    min=10      max=300
+     vus_max........................: 300   min=300     max=300
+
+[root@VM-0-2-centos ~]# k6 run ./test.js
+
+          /\      |??| /??/   /??/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ??\  
+   /          \   |  |\  \ |  (?)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: ./test.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 300 max VUs, 1m30s max duration (incl. graceful stop):
+           * contacts: 1 iterations for each of 300 VUs (maxDuration: 1m0s, gracefulStop: 30s)
+
+
+running (0m07.2s), 000/300 VUs, 300 complete and 0 interrupted iterations
+contacts ? [======================================] 300 VUs  0m07.2s/1m0s  300/300 iters, 1 per VU
+
+     data_received..................: 69 kB 9.6 kB/s
+     data_sent......................: 83 kB 12 kB/s
+     http_req_blocked...............: avg=41.73ms  min=35.02ms med=41.52ms  max=48.51ms p(90)=46.2ms  p(95)=46.74ms
+     http_req_connecting............: avg=12.34ms  min=1.83ms  med=13.77ms  max=16.27ms p(90)=14.74ms p(95)=14.99ms
+     http_req_duration..............: avg=4.31s    min=2.65s   med=4.17s    max=7.14s   p(90)=5.55s   p(95)=6.79s  
+       { expected_response:true }...: avg=4.31s    min=2.65s   med=4.17s    max=7.14s   p(90)=5.55s   p(95)=6.79s  
+     http_req_failed................: 0.00% ? 0         ? 300  
+     http_req_receiving.............: avg=607.99ms min=17.77?s med=36.85?s  max=4.53s   p(90)=3.18s   p(95)=4.31s  
+     http_req_sending...............: avg=583.79?s min=19.76?s med=491.03?s max=1.8ms   p(90)=1.29ms  p(95)=1.43ms 
+     http_req_tls_handshaking.......: avg=0s       min=0s      med=0s       max=0s      p(90)=0s      p(95)=0s     
+     http_req_waiting...............: avg=3.7s     min=1.35s   med=3.31s    max=5.56s   p(90)=5.37s   p(95)=5.46s  
+     http_reqs......................: 300   41.661099/s
+     iteration_duration.............: avg=4.35s    min=2.69s   med=4.21s    max=7.19s   p(90)=5.6s    p(95)=6.83s  
+     iterations.....................: 300   41.661099/s
+     vus............................: 13    min=13      max=300
+     vus_max........................: 300   min=300     max=300

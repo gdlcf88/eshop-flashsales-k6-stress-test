@@ -1,0 +1,107 @@
+[root@VM-0-2-centos ~]# k6 run ./test.js
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: ./test.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 600 max VUs, 1m30s max duration (incl. graceful stop):
+           * contacts: 1 iterations for each of 600 VUs (maxDuration: 1m0s, gracefulStop: 30s)
+
+
+running (0m11.5s), 000/600 VUs, 600 complete and 0 interrupted iterations
+contacts ✓ [======================================] 600 VUs  0m11.5s/1m0s  600/600 iters, 1 per VU
+
+     data_received..................: 136 kB 12 kB/s
+     data_sent......................: 166 kB 14 kB/s
+     http_req_blocked...............: avg=21.8ms   min=1.43ms  med=23.82ms max=46.94ms p(90)=31.09ms p(95)=32.43ms
+     http_req_connecting............: avg=8.2ms    min=1.39ms  med=6.29ms  max=24.27ms p(90)=14.27ms p(95)=15.05ms
+     http_req_duration..............: avg=7.76s    min=6.25s   med=7.73s   max=11.46s  p(90)=8.62s   p(95)=9.96s  
+       { expected_response:true }...: avg=7.76s    min=6.25s   med=7.73s   max=11.46s  p(90)=8.62s   p(95)=9.96s  
+     http_req_failed................: 0.00%  ✓ 0         ✗ 600  
+     http_req_receiving.............: avg=398.32ms min=15.3µs  med=31.52µs max=5.58s   p(90)=93.28µs p(95)=4.58s  
+     http_req_sending...............: avg=1.63ms   min=17.91µs med=1.58ms  max=15.24ms p(90)=4.63ms  p(95)=5.02ms 
+     http_req_tls_handshaking.......: avg=0s       min=0s      med=0s      max=0s      p(90)=0s      p(95)=0s     
+     http_req_waiting...............: avg=7.36s    min=5.33s   med=7.35s   max=8.93s   p(90)=8.34s   p(95)=8.47s  
+     http_reqs......................: 600    52.152467/s
+     iteration_duration.............: avg=7.78s    min=6.26s   med=7.76s   max=11.49s  p(90)=8.64s   p(95)=9.98s  
+     iterations.....................: 600    52.152467/s
+     vus............................: 25     min=25      max=600
+     vus_max........................: 600    min=600     max=600
+
+[root@VM-0-2-centos ~]# k6 run ./test.js
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: ./test.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 600 max VUs, 1m30s max duration (incl. graceful stop):
+           * contacts: 1 iterations for each of 600 VUs (maxDuration: 1m0s, gracefulStop: 30s)
+
+
+running (0m11.5s), 000/600 VUs, 600 complete and 0 interrupted iterations
+contacts ✓ [======================================] 600 VUs  0m11.5s/1m0s  600/600 iters, 1 per VU
+
+     data_received..................: 136 kB 12 kB/s
+     data_sent......................: 166 kB 15 kB/s
+     http_req_blocked...............: avg=7.62ms   min=1.47ms  med=3.63ms  max=26.91ms p(90)=19.17ms  p(95)=20.56ms 
+     http_req_connecting............: avg=4.09ms   min=1.43ms  med=3.23ms  max=12.42ms p(90)=9.13ms   p(95)=10.56ms 
+     http_req_duration..............: avg=8.44s    min=6.03s   med=8.95s   max=11.44s  p(90)=10.09s   p(95)=10.14s  
+       { expected_response:true }...: avg=8.44s    min=6.03s   med=8.95s   max=11.44s  p(90)=10.09s   p(95)=10.14s  
+     http_req_failed................: 0.00%  ✓ 0         ✗ 600  
+     http_req_receiving.............: avg=333.26ms min=18.09µs med=32.41µs max=5.28s   p(90)=193.76µs p(95)=3.26s   
+     http_req_sending...............: avg=190.94µs min=18.27µs med=76.59µs max=1.12ms  p(90)=733.71µs p(95)=905.52µs
+     http_req_tls_handshaking.......: avg=0s       min=0s      med=0s      max=0s      p(90)=0s       p(95)=0s      
+     http_req_waiting...............: avg=8.1s     min=4.64s   med=7.62s   max=10.52s  p(90)=9.83s    p(95)=10.1s   
+     http_reqs......................: 600    52.306772/s
+     iteration_duration.............: avg=8.45s    min=6.04s   med=8.96s   max=11.45s  p(90)=10.09s   p(95)=10.15s  
+     iterations.....................: 600    52.306772/s
+     vus............................: 23     min=23      max=600
+     vus_max........................: 600    min=600     max=600
+
+[root@VM-0-2-centos ~]# k6 run ./test.js
+
+          /\      |‾‾| /‾‾/   /‾‾/   
+     /\  /  \     |  |/  /   /  /    
+    /  \/    \    |     (   /   ‾‾\  
+   /          \   |  |\  \ |  (‾)  | 
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: ./test.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 600 max VUs, 1m30s max duration (incl. graceful stop):
+           * contacts: 1 iterations for each of 600 VUs (maxDuration: 1m0s, gracefulStop: 30s)
+
+
+running (0m14.1s), 000/600 VUs, 600 complete and 0 interrupted iterations
+contacts ✓ [======================================] 600 VUs  0m14.1s/1m0s  600/600 iters, 1 per VU
+
+     data_received..................: 136 kB 9.7 kB/s
+     data_sent......................: 166 kB 12 kB/s
+     http_req_blocked...............: avg=44.05ms  min=28.82ms med=44.04ms  max=54.03ms p(90)=50.71ms  p(95)=51.43ms
+     http_req_connecting............: avg=7.31ms   min=1.51ms  med=7.37ms   max=20.49ms p(90)=11.03ms  p(95)=11.57ms
+     http_req_duration..............: avg=9.33s    min=7.01s   med=8.55s    max=14s     p(90)=13.21s   p(95)=13.7s  
+       { expected_response:true }...: avg=9.33s    min=7.01s   med=8.55s    max=14s     p(90)=13.21s   p(95)=13.7s  
+     http_req_failed................: 0.00%  ✓ 0         ✗ 600  
+     http_req_receiving.............: avg=496.24ms min=19.84µs med=33.27µs  max=6.31s   p(90)=118.21µs p(95)=5.98s  
+     http_req_sending...............: avg=824.79µs min=17.42µs med=650.12µs max=2.95ms  p(90)=1.63ms   p(95)=2.56ms 
+     http_req_tls_handshaking.......: avg=0s       min=0s      med=0s       max=0s      p(90)=0s       p(95)=0s     
+     http_req_waiting...............: avg=8.83s    min=4.28s   med=8.21s    max=14s     p(90)=12.9s    p(95)=13.7s  
+     http_reqs......................: 600    42.669514/s
+     iteration_duration.............: avg=9.37s    min=7.06s   med=8.59s    max=14.04s  p(90)=13.25s   p(95)=13.74s 
+     iterations.....................: 600    42.669514/s
+     vus............................: 14     min=14      max=600
+     vus_max........................: 600    min=600     max=600
