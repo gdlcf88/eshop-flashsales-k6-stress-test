@@ -1,0 +1,15 @@
+ABP 5.3.1
+EasyAbp EShop module 3.0.0-preview13
+EF Core repositories by PostgreSQL
+EShop Dapr actor inventory provider, persistent by Redis
+Distributed event bus by local event bus (no MQ installed)
+Distributed cache by Redis
+Distributed locking by Redis
+No distributed event boxes used
+
+Server (K8S Nodes):
+4 * Standard B2s | 2 cores, 4GB RAM | Azure East Asia
+1 * Standard D2s v3 | 2 cores, 8GB RAM | Azure East Asia
+
+Client:
+1 * S6.2XLARGE32 | 8 cores, 16GB RAM, 100Mbps | Qcloud Hongkong(Zone 3)

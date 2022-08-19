@@ -1,0 +1,113 @@
+PS D:\OneDrive\EasyAbp\BookFlashSales> .\k6 run .\eshop-flashsales-k6-stress-test\k6-script.js
+
+          /\      |‾‾| /‾‾/   /‾‾/
+     /\  /  \     |  |/  /   /  /
+    /  \/    \    |     (   /   ‾‾\
+   /          \   |  |\  \ |  (‾)  |
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: .\eshop-flashsales-k6-stress-test\k6-script.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 1000 max VUs, 1m30s max duration (incl. graceful stop):
+           * contacts: 1 iterations for each of 1000 VUs (maxDuration: 1m0s, gracefulStop: 30s)
+
+
+running (0m02.9s), 0000/1000 VUs, 1000 complete and 0 interrupted iterations
+contacts ✓ [======================================] 1000 VUs  0m02.9s/1m0s  1000/1000 iters, 1 per VU
+
+     data_received..................: 346 kB 118 kB/s
+     data_sent......................: 271 kB 92 kB/s
+     flashsale-Success..............: 50     17.034834/s
+     flashsales-Failure.............: 950    323.661841/s
+     http_req_blocked...............: avg=311.65ms min=5.99ms med=502.01ms max=631.49ms p(90)=525.52ms p(95)=535.52ms
+     http_req_connecting............: avg=305.72ms min=5.99ms med=501.86ms max=596.76ms p(90)=523.7ms  p(95)=526.22ms
+     http_req_duration..............: avg=2.09s    min=1.34s  med=2.1s     max=2.32s    p(90)=2.25s    p(95)=2.27s
+       { expected_response:true }...: avg=2.09s    min=1.34s  med=2.1s     max=2.32s    p(90)=2.25s    p(95)=2.27s
+     http_req_failed................: 0.00%  ✓ 0          ✗ 1000
+     http_req_receiving.............: avg=81.3µs   min=0s     med=0s       max=1.29ms   p(90)=360.5µs  p(95)=507.98µs
+     http_req_sending...............: avg=1.63ms   min=0s     med=999.2µs  max=45.52ms  p(90)=1.99ms   p(95)=2.99ms
+     http_req_tls_handshaking.......: avg=0s       min=0s     med=0s       max=0s       p(90)=0s       p(95)=0s
+     http_req_waiting...............: avg=2.08s    min=1.34s  med=2.1s     max=2.32s    p(90)=2.25s    p(95)=2.27s
+     http_reqs......................: 1000   340.696674/s
+     iteration_duration.............: avg=2.4s     min=1.49s  med=2.43s    max=2.85s    p(90)=2.77s    p(95)=2.81s
+     iterations.....................: 1000   340.696674/s
+     vus............................: 42     min=42       max=1000
+     vus_max........................: 1000   min=1000     max=1000
+
+PS D:\OneDrive\EasyAbp\BookFlashSales> .\k6 run .\eshop-flashsales-k6-stress-test\k6-script.js
+
+          /\      |‾‾| /‾‾/   /‾‾/
+     /\  /  \     |  |/  /   /  /
+    /  \/    \    |     (   /   ‾‾\
+   /          \   |  |\  \ |  (‾)  |
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: .\eshop-flashsales-k6-stress-test\k6-script.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 1000 max VUs, 1m30s max duration (incl. graceful stop):
+           * contacts: 1 iterations for each of 1000 VUs (maxDuration: 1m0s, gracefulStop: 30s)
+
+
+running (0m03.3s), 0000/1000 VUs, 1000 complete and 0 interrupted iterations
+contacts ✓ [======================================] 1000 VUs  0m03.3s/1m0s  1000/1000 iters, 1 per VU
+
+     data_received..................: 346 kB 104 kB/s
+     data_sent......................: 271 kB 81 kB/s
+     flashsale-Success..............: 50     14.985327/s
+     flashsales-Failure.............: 950    284.721221/s
+     http_req_blocked...............: avg=61.27ms  min=0s    med=1ms   max=529.47ms p(90)=504.35ms p(95)=517.92ms
+     http_req_connecting............: avg=60.2ms   min=0s    med=1ms   max=522.19ms p(90)=504.35ms p(95)=517.28ms
+     http_req_duration..............: avg=2.66s    min=1.33s med=2.65s max=3.13s    p(90)=2.97s    p(95)=3.02s
+       { expected_response:true }...: avg=2.66s    min=1.33s med=2.65s max=3.13s    p(90)=2.97s    p(95)=3.02s
+     http_req_failed................: 0.00%  ✓ 0          ✗ 1000
+     http_req_receiving.............: avg=95.55µs  min=0s    med=0s    max=36.05ms  p(90)=0s       p(95)=479.53µs
+     http_req_sending...............: avg=736.79µs min=0s    med=0s    max=36.42ms  p(90)=1ms      p(95)=2.34ms
+     http_req_tls_handshaking.......: avg=0s       min=0s    med=0s    max=0s       p(90)=0s       p(95)=0s
+     http_req_waiting...............: avg=2.66s    min=1.33s med=2.65s max=3.13s    p(90)=2.97s    p(95)=3.02s
+     http_reqs......................: 1000   299.706548/s
+     iteration_duration.............: avg=2.72s    min=1.34s med=2.72s max=3.28s    p(90)=3.14s    p(95)=3.21s
+     iterations.....................: 1000   299.706548/s
+     vus............................: 467    min=467      max=1000
+     vus_max........................: 1000   min=1000     max=1000
+
+PS D:\OneDrive\EasyAbp\BookFlashSales> .\k6 run .\eshop-flashsales-k6-stress-test\k6-script.js
+
+          /\      |‾‾| /‾‾/   /‾‾/
+     /\  /  \     |  |/  /   /  /
+    /  \/    \    |     (   /   ‾‾\
+   /          \   |  |\  \ |  (‾)  |
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: .\eshop-flashsales-k6-stress-test\k6-script.js
+     output: -
+
+  scenarios: (100.00%) 1 scenario, 1000 max VUs, 1m30s max duration (incl. graceful stop):
+           * contacts: 1 iterations for each of 1000 VUs (maxDuration: 1m0s, gracefulStop: 30s)
+
+
+running (0m03.3s), 0000/1000 VUs, 1000 complete and 0 interrupted iterations
+contacts ✓ [======================================] 1000 VUs  0m03.3s/1m0s  1000/1000 iters, 1 per VU
+
+     data_received..................: 346 kB 106 kB/s
+     data_sent......................: 271 kB 83 kB/s
+     flashsale-Success..............: 50     15.283837/s
+     flashsales-Failure.............: 950    290.392904/s
+     http_req_blocked...............: avg=98.83ms min=0s       med=44.14ms max=555.47ms p(90)=509.78ms p(95)=513.08ms
+     http_req_connecting............: avg=98.06ms min=0s       med=43.96ms max=555.47ms p(90)=509.36ms p(95)=513.01ms
+     http_req_duration..............: avg=2.57s   min=591.77ms med=2.6s    max=3.01s    p(90)=2.84s    p(95)=2.88s
+       { expected_response:true }...: avg=2.57s   min=591.77ms med=2.6s    max=3.01s    p(90)=2.84s    p(95)=2.88s
+     http_req_failed................: 0.00%  ✓ 0          ✗ 1000
+     http_req_receiving.............: avg=54.06µs min=0s       med=0s      max=1.07ms   p(90)=0s       p(95)=431.39µs
+     http_req_sending...............: avg=1.54ms  min=0s       med=0s      max=48.18ms  p(90)=1ms      p(95)=3.37ms
+     http_req_tls_handshaking.......: avg=0s      min=0s       med=0s      max=0s       p(90)=0s       p(95)=0s
+     http_req_waiting...............: avg=2.57s   min=591.21ms med=2.6s    max=2.96s    p(90)=2.84s    p(95)=2.88s
+     http_reqs......................: 1000   305.676741/s
+     iteration_duration.............: avg=2.67s   min=592.77ms med=2.7s    max=3.24s    p(90)=3.08s    p(95)=3.13s
+     iterations.....................: 1000   305.676741/s
+     vus............................: 410    min=410      max=999
+     vus_max........................: 1000   min=1000     max=1000

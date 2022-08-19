@@ -1,0 +1,11 @@
+ABP 5.3.1
+EasyAbp EShop module 3.0.0-preview18
+EF Core repositories by PostgreSQL
+EShop Dapr actor inventory provider, persistent by Redis
+Distributed event bus by RabbitMQ
+Distributed cache by Redis
+Distributed locking by Redis
+No distributed event boxes used
+
+Server / Client:
+1 * Windows 10 21H1 | 6 cores 3.70 GHz, 32GB RAM | Intranet

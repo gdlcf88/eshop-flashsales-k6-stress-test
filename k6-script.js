@@ -7,19 +7,21 @@ export let options = {
   scenarios: {
     contacts: {
       executor: 'per-vu-iterations',
-      vus: 1000,
+      vus: 3000,
       iterations: 1,
       maxDuration: '1m',
     }
   }
 }
 
-const hostURL = "http://flashsales.easyabp.io";
-const planId = "3a0580c5-d7e6-7d4b-8994-301aaad55546";
+const hostURL = "http://localhost:44331";
+const planId = "3a05957c-a91e-afbd-1e37-84cb004aa09b";
 
 let orderURL = hostURL + "/api/e-shop/plugins/flash-sales/flash-sale-plan/{planId}/order".replace('{planId}', planId);
 
 let none200Counter = new Counter("none200Counter");
+let successCounter = new Counter("flashsale-Success");
+let failureCounter = new Counter("flashsales-Failure");
 
 export default function () {
   let userId = uuidv4();
@@ -32,4 +34,7 @@ export default function () {
   });
 
   if (orderResponse.status !== 200) none200Counter.add(1);
+  let result = JSON.parse(orderResponse.body)
+  if (result && result.isSuccess) successCounter.add(1);
+  if (result && !result.isSuccess) failureCounter.add(1);
 }

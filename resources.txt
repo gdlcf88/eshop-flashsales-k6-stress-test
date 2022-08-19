@@ -1,8 +1,0 @@
-Server (K8S Nodes):
-4 * Standard B2s | 2 cores, 4GB RAM | Azure East Asia
-1 * Standard D2s v3 | 2 cores, 8GB RAM | Azure East Asia
-
-Client:
-1 * S6.2XLARGE32 | 8 cores, 16GB RAM, 100Mbps | Qcloud Hongkong(Zone 3)
-
-Flash sales stock(inventory): 50
